@@ -81,6 +81,14 @@ h3{
     padding: 20px;
     color: #45636B;
 }
+@media (max-width: 900px){
+    .body-text p{
+        width: 100%;
+    }
+    .about-us div{
+        width: 100% !important;
+    }
+}
 .about-us{
     min-height: 120vh;
 }
