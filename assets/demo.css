@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: normal 14px Arial;
+}
+.width-100{
+    width:100%;
+}
+.inline-block{
+    display: inline-block;
+}
+.skrollr-desktop body {
+    height:100% !important;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+h1{
+    color: #fff;
+    font: normal 4rem 'Droid Serif';
+    padding-top: 24vh;
+}
+h2{
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+h3{
+    color:  #5383d3;
+    font: normal 2.3rem 'Cookie', cursive;
+    margin: 0;
+}
+#skrollr-body {
+    height:100%;
+    position:relative;
+    overflow: hidden;
+}
+.parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    overflow:hidden;
+    height:80vh;
+    top:-80vh;
+}
+.parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:100vh;
+    top:0;
+}
+.parallax-image.skrollable-between {
+    display:block;
+}
+.gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+    height:80vh;
+}
+.skrollr .gap {
+    background:transparent !important;
+}
+.content-text{
+    padding: 120px 0;
+    background-color: #fff;
+    color: #25373C;
+    font-size: 1.2rem;
+}
+.body-text p{
+    width: 28%;
+    padding: 20px;
+    color: #45636B;
+}
+.about-us{
+    min-height: 120vh;
+}
+.about-us div{
+    width: 25%;
+    margin: 30px 10px;
+}
+.about-us div img{
+    border-radius: 50%;
+    width: 60%;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    font: bold 1rem sans-serif;
+    padding: 50px 60px 55px;
+    overflow: hidden;
+}
+footer .footer-left{
+    float: left;
+}
+footer .footer-links{
+    color: #95A4A9;
+    margin: 22px 0 14px;
+    padding: 0;
+}
+footer .footer-links a{
+    text-decoration: none;
+    color: #50B575;
+}
+footer .footer-right{
+    float: right;
+}
+footer form{
+    position: relative;
+}
+footer form input{
+    display: block;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    color: #32383A;
+    padding: 18px 50px 18px 18px;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #eee;
+}
+footer form input::-webkit-input-placeholder {
+    color:  #5c666b;
+}
+footer form i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    color: #d1d2d2;
+    font-size: 20px;
+}
+
+
