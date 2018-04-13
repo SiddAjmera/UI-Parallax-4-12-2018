@@ -36,6 +36,13 @@ h3{
     font: normal 2.3rem 'Cookie', cursive;
     margin: 0;
 }
+h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #425F67;
+    font-weight: normal;
+}
+
 #skrollr-body {
     height:100%;
     position:relative;
@@ -88,6 +95,27 @@ h3{
     .about-us div{
         width: 100% !important;
     }
+}
+
+.features-list{
+    padding: 120px 0;
+    background-color: #fff;
+    color: #25373C;
+    font-size: 1.2rem;
+    min-height: 100vh;
+}
+.features-list div{
+    width: 30%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 45px;
+    box-shadow: 1px 1px 1px #ccc, 0 0 30px #eee inset;
+}
+
+.features-list div i{
+    font-size: 150px;
+    margin-bottom: 40px;
+    color: #50B575;
 }
 .about-us{
     min-height: 120vh;
@@ -151,5 +179,8 @@ footer form i{
     color: #d1d2d2;
     font-size: 20px;
 }
-
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
 
