@@ -5,7 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
         <title>Parallax</title>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -49,8 +52,41 @@
 
         <div id="skrollr-body">
             <div id="page-intro" class="gap" style="background-image:url(assets/images/coast.jpg); ">
-                <h1 class="text-center">Parallax Demo</h1>
+                <div id="img-caraousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/la.jpg" alt="Los Angeles">
+                      <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>  
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/chicago.jpg" alt="Chicago">
+                      <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>  
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/ny.jpg" alt="New York">
+                      <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>Lorem ipsum dolor sit amet</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#img-caraousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#img-caraousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
             </div>
+            
 
             <div class="body-text text-center content content-text">
 
@@ -67,6 +103,23 @@
             </div>
 
             <div class="gap" style="background-image:url(assets/images/palmtrees.jpg); "></div>
+
+            <div class="features-list text-center">
+                <h2>Features</h2>
+                <div class="inline-block" data-100-bottom-top="transform: translateX(-200px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+                    <i class="material-icons">cloud_done</i>
+                    <h4><b>cloud storage</h4>
+                </div>
+                <div class="inline-block" data-100-bottom-top="transform: translateY(200px); opacity: 0" data-center-top="transform: translateY(0px); opacity: 1">
+                    <i class="material-icons">public</i>
+                    <h4><b>locations</b></h4>
+                </div>
+
+                <div class="inline-block" data-100-bottom-top="transform: translateX(200px); opacity: 0" data-center-top="transform: translateX(0px); opacity: 1">
+                    <i class="material-icons">security</i>
+                    <h4><b>data protection</b></h4>
+                </div>
+            </div>
 
             <div class="about-us text-center content-text">
                 <h2>About us</h2>
@@ -97,6 +150,7 @@
             </div>
 
             <div class="gap" style="background-image:url(assets/images/sea.jpg);"></div>
+            <div class="gallery"></div>
             <footer class="width-100 text-left">
                 <div class="footer-left">
                     <h3>Logo</h3>
@@ -121,7 +175,48 @@
                 </div>
             </footer>
         </div>
+        <div class="scroll-pause" data-anchor-target=".gallery" data-100p-top-top="transform:translateY(100%);" data-top-top="transform:translateY(0%)" data--150p-top-top="" data--300p-top-top="transform:translateY(-100%)">
 
+            <div class="row" data-anchor-target=".gallery" data-top-top="transform: translateX(0%);" data--150p-top-top="transform: translateX(-50%);">
+                <div class="pull-left" style="background-image:url(assets/images/small/coast.jpg);" ></div>
+
+                <div class="pull-left" style="background-image:url(assets/images/small/palmtrees.jpg);" ></div>
+
+                <div class="pull-left" style="background-image:url(assets/images/small/bay.jpg);" ></div>
+
+                <div class="pull-left" style="background-image:url(assets/images/small/sea.jpg);" ></div>
+
+                <div class="pull-left" style="background-image:url(assets/images/small/coast.jpg);" ></div>
+
+                <div class="pull-left" style="background-image:url(assets/images/small/palmtrees.jpg);" ></div>
+
+                <div class="pull-left" style="background-image:url(assets/images/small/bay.jpg);" ></div>
+
+                <div class="pull-left" style="background-image:url(assets/images/small/sea.jpg);" ></div>
+            </div>
+
+
+            <div class="row" data-anchor-target=".gallery" data-top-top="transform: translateX(-50%);" data--150p-top-top="transform: translateX(0);">
+
+                <div style="background-image:url(assets/images/small/sea.jpg);" ></div>
+
+                <div style="background-image:url(assets/images/small/bay.jpg);" ></div>
+
+                <div style="background-image:url(assets/images/small/palmtrees.jpg);" ></div>
+
+                <div style="background-image:url(assets/images/small/coast.jpg);" ></div>
+
+                <div style="background-image:url(assets/images/small/sea.jpg);" ></div>
+
+                <div style="background-image:url(assets/images/small/bay.jpg);" ></div>
+
+                <div style="background-image:url(assets/images/small/palmtrees.jpg);" ></div>
+
+                <div style="background-image:url(assets/images/small/coast.jpg);" ></div>
+
+            </div>
+
+        </div>
         <script src="assets/skrollr.min.js"></script>
         <script>
             skrollr.init();
